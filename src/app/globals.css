@@ -5,7 +5,7 @@
 @layer base {
   :root {
     --background: 30 36% 96%;
-    --foreground: 0 100% 0%;
+    --foreground: 252 7% 13%;
     --card: 0 0% 100%;
     --card-foreground: 0 100% 0%;
     --popover: 0 0% 100%;
@@ -38,5 +38,11 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  h1 {
+    @apply text-4xl font-bold;
+  }
+  .flex-center {
+    @apply flex items-center justify-center;
   }
 }

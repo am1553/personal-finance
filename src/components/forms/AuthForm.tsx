@@ -6,10 +6,8 @@ import Link from "next/link";
 
 function AuthForm({ type }: { type: "login" | "signup" }) {
   return (
-    <form action="" className="bg-card p-8">
-      <h1 className="text-2xl font-bold pb-6">
-        {type === "login" ? "Login" : "Sign up"}
-      </h1>
+    <form action="" className="bg-card p-8 rounded-lg w-full max-w-screen-sm">
+      <h1 className="pb-6">{type === "login" ? "Login" : "Sign up"}</h1>
       <div className="flex flex-col gap-2 mb-8 md:mb-6">
         {type === "signup" && (
           <>
@@ -45,11 +43,11 @@ function AuthForm({ type }: { type: "login" | "signup" }) {
         )}
 
         {type === "login" ? (
-          <Link href={"/signup"} className="font-bold text-grey-900">
+          <Link href={"/signup"} className="font-bold text-grey-900 underline">
             Sign Up
           </Link>
         ) : (
-          <Link href={"/login"} className="font-bold text-grey-900">
+          <Link href={"/login"} className="font-bold text-grey-900 underline">
             Login
           </Link>
         )}

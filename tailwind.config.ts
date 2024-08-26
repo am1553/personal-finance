@@ -10,6 +10,9 @@ const config = {
   ],
   prefix: "",
   theme: {
+    backgroundImage: {
+      authentication: "url('/images/illustration-authentication.svg')",
+    },
     container: {
       center: true,
       padding: "2rem",
