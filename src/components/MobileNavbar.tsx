@@ -9,7 +9,7 @@ function MobileNavbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 bg-grey-900 px-6 pt-4 rounded-t-lg lg:hidden">
+    <nav className="fixed bottom-0 left-0 right-0 bg-grey-900 px-6 pt-4 rounded-t-lg lg:hidden z-10">
       <ul className="grid grid-cols-5">
         {routes.map((route) => (
           <li

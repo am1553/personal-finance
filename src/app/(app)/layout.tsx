@@ -4,7 +4,7 @@ import React from "react";
 
 function AppLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <main className="lg:grid lg:grid-cols-[auto_1fr] h-screen">
+    <main className="lg:grid lg:grid-cols-[20rem_1fr] pb-24">
       <Sidebar />
       {children}
       <MobileNavbar />

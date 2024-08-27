@@ -45,4 +45,8 @@
   .flex-center {
     @apply flex items-center justify-center;
   }
+
+  .card {
+    @apply px-6 py-8 rounded-lg;
+  }
 }

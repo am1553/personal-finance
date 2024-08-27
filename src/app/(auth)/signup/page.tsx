@@ -1,4 +1,4 @@
-import AuthForm from "@/components/forms/auth-form";
+import AuthForm from "@/components/forms/AuthForm";
 import React from "react";
 
 function SignupPage() {

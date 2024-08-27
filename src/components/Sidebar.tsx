@@ -12,7 +12,7 @@ function Sidebar() {
 
   const minimizeMenu = () => setIsOpen(false);
   return (
-    <aside className="max-lg:hidden bg-grey-900 overflow-hidden flex flex-col gap-14 rounded-r-2xl w-80">
+    <aside className="max-lg:hidden bg-grey-900 overflow-hidden flex flex-col gap-14 rounded-r-2xl fixed left-0 top-0 bottom-0 w-80">
       <Image
         src={"images/logo-large.svg"}
         height={22}
