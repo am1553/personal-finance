@@ -7,16 +7,22 @@ function OverviewCard({
   link,
   children,
   label,
+  size = "md",
+  className,
 }: {
   title: string;
   link: string;
   children: React.ReactNode;
   label: string;
+  size?: "sm" | "md";
+  className?: string;
 }) {
   return (
-    <div className="bg-white card 2xl:h-full">
+    <div className={`card 2xl:h-full ${className ? className : "bg-white"}`}>
       <div className="flex justify-between mb-6 md:mb-10">
-        <span className="text-2xl font-bold">{title}</span>
+        <span className={`${size === "md" ? "text-2xl" : "text-lg"} font-bold`}>
+          {title}
+        </span>
         <Link href={link} className="flex items-center gap-4">
           <span>{label}</span>
           <Image

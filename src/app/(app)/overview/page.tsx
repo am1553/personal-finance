@@ -7,7 +7,7 @@ import React from "react";
 
 function OverviewPage() {
   return (
-    <section className="flex flex-col gap-6 px-4 py-12 lg:col-start-2 md:px-10 lg:px-12 xl:px-14 2xl:px-24">
+    <section className="route-section">
       <h1 className="my-4">Overview</h1>
       <div className="flex flex-col gap-4 md:grid md:grid-cols-3">
         <AmountCard
