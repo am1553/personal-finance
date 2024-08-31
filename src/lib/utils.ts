@@ -13,3 +13,7 @@ export function toCurrency(amount: number, decimal: number) {
   });
   return USDollar.format(amount);
 }
+
+export function toPercentage(num: number) {
+  return `${Math.round((num + Number.EPSILON) * 100) / 100}%`;
+}

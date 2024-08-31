@@ -5,6 +5,7 @@ import data from "../../data.json";
 import ThemeLabel from "./ThemeLabel";
 import OverviewCard from "./OverviewCard";
 import moment from "moment";
+import ProgressBar from "./ProgressBar";
 function SummaryCard({
   budget,
 }: {
@@ -34,15 +35,8 @@ function SummaryCard({
       <span className="text-sm text-grey-500">
         Maximum of {toCurrency(budget.maximum, 2)}
       </span>
-      <div className="h-8 p-1 w-full rounded-md bg-beige-100">
-        <div
-          className="h-full rounded-md"
-          style={{
-            backgroundColor: budget.theme,
-            width: `${percentageUsed}%`,
-          }}
-        ></div>
-      </div>
+
+      <ProgressBar color={budget.theme} percentage={percentageUsed} />
       <div className="grid grid-cols-2">
         <ThemeLabel color={budget.theme}>
           <span>Spent</span>

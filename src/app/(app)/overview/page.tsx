@@ -9,7 +9,7 @@ function OverviewPage() {
   return (
     <section className="route-section">
       <h1 className="my-4">Overview</h1>
-      <div className="flex flex-col gap-4 md:grid md:grid-cols-3">
+      <div className="flex flex-col gap-12 md:grid md:grid-cols-3">
         <AmountCard
           cardID="current-balance-overview-card"
           title="Current Balance"
@@ -29,12 +29,12 @@ function OverviewPage() {
           theme="light"
         />
       </div>
-      <div className="flex flex-col gap-6 2xl:grid 2xl:grid-cols-5">
-        <div className="flex flex-col gap-6 2xl:col-span-3">
+      <div className="flex flex-col gap-12 2xl:grid 2xl:grid-cols-5">
+        <div className="flex flex-col gap-12 2xl:col-span-3">
           <PotsOverview />
           <TransactionsOverview />
         </div>
-        <div className="flex flex-col gap-6 2xl:col-span-2">
+        <div className="flex flex-col gap-12 2xl:col-span-2">
           <BudgetsOverview />
           <RecurringBillsOverview />
         </div>

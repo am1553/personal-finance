@@ -1,7 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { Add } from "@mui/icons-material";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import data from "../../../../data.json";
 import SpendingSummary from "@/components/SpendingSummary";
 import SummaryCard from "@/components/SummaryCard";
@@ -18,7 +18,7 @@ function BudgetsPage() {
         </Button>
       </div>
       <div className="flex flex-col gap-12 lg:grid lg:grid-cols-[1fr_2fr]">
-        <div className="lg:fixed">
+        <div className="">
           <SpendingSummary displayRow />
         </div>
         <div className="flex flex-col gap-12 lg:col-start-2">
