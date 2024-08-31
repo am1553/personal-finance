@@ -4,7 +4,7 @@ import { Add } from "@mui/icons-material";
 import React from "react";
 import data from "../../../../data.json";
 import SpendingSummary from "@/components/SpendingSummary";
-import SummaryCard from "@/components/SummaryCard";
+import BudgetSummaryCard from "@/components/BudgetSummaryCard";
 
 function BudgetsPage() {
   const { budgets } = data;
@@ -23,7 +23,10 @@ function BudgetsPage() {
         </div>
         <div className="flex flex-col gap-12 lg:col-start-2">
           {budgets.map((budget) => (
-            <SummaryCard key={budget.category.toLowerCase()} budget={budget} />
+            <BudgetSummaryCard
+              key={budget.category.toLowerCase()}
+              budget={budget}
+            />
           ))}
         </div>
       </div>

@@ -6,7 +6,7 @@ import ThemeLabel from "./ThemeLabel";
 import OverviewCard from "./OverviewCard";
 import moment from "moment";
 import ProgressBar from "./ProgressBar";
-function SummaryCard({
+function BudgetSummaryCard({
   budget,
 }: {
   budget: { theme: string; category: string; maximum: number };
@@ -83,4 +83,4 @@ function SummaryCard({
   );
 }
 
-export default SummaryCard;
+export default BudgetSummaryCard;
