@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import { Button } from "./ui/button";
+import { SignOutButton } from "@clerk/nextjs";
 
 function Sidebar() {
   const pathname = usePathname();
@@ -63,7 +64,9 @@ function Sidebar() {
         </ul>
       </nav>
       <div className="mx-8 mb-12">
-        <Button variant={"primary"}>Logout</Button>
+        <SignOutButton redirectUrl="/login">
+          <Button variant={"primary"}>Logout</Button>
+        </SignOutButton>
       </div>
     </aside>
   );

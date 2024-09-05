@@ -6,6 +6,14 @@ import ThemeLabel from "./ThemeLabel";
 import OverviewCard from "./OverviewCard";
 import moment from "moment";
 import ProgressBar from "./ProgressBar";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "./ui/dropdown-menu";
 function BudgetSummaryCard({
   budget,
 }: {
@@ -30,7 +38,19 @@ function BudgetSummaryCard({
         <span className="capitalize text-xl font-bold flex-1">
           {budget.category}
         </span>
-        <MoreHorizIcon className="text-grey-300" />
+        <DropdownMenu>
+          <DropdownMenuTrigger>
+            <MoreHorizIcon className="text-grey-300" />
+          </DropdownMenuTrigger>
+          <DropdownMenuContent className="">
+            <DropdownMenuItem className="capitalize">
+              Edit Budget
+            </DropdownMenuItem>
+            <DropdownMenuItem className="capitalize text-red">
+              Deletet Budget
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
       <span className="text-sm text-grey-500">
         Maximum of {toCurrency(budget.maximum, 2)}

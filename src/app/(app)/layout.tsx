@@ -1,14 +1,21 @@
 import MobileNavbar from "@/components/MobileNavbar";
 import Sidebar from "@/components/Sidebar";
+import { SignedIn } from "@clerk/nextjs";
 import React from "react";
 
-function AppLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+function AppLayout({
+  children,
+  modal,
+}: Readonly<{ children: React.ReactNode; modal: React.ReactNode }>) {
   return (
-    <main className="lg:grid lg:grid-cols-[20rem_1fr] pb-24">
-      <Sidebar />
-      {children}
-      <MobileNavbar />
-    </main>
+    <SignedIn>
+      <main className="lg:grid lg:grid-cols-[20rem_1fr] pb-24">
+        <Sidebar />
+        {modal}
+        {children}
+        <MobileNavbar />
+      </main>
+    </SignedIn>
   );
 }
 
