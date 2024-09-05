@@ -6,12 +6,12 @@ import React from "react";
 function AppLayout({
   children,
   modal,
-}: Readonly<{ children: React.ReactNode; modal: React.ReactNode }>) {
+}: Readonly<{ children: React.ReactNode; modal?: React.ReactNode }>) {
   return (
     <SignedIn>
       <main className="lg:grid lg:grid-cols-[20rem_1fr] pb-24">
         <Sidebar />
-        {modal}
+        {modal && modal}
         {children}
         <MobileNavbar />
       </main>
