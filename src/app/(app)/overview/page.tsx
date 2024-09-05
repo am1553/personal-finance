@@ -3,6 +3,7 @@ import BudgetsOverview from "@/components/BudgetsOverview";
 import PotsOverview from "@/components/PotsOverview";
 import RecurringBillsOverview from "@/components/RecurringBillsOverview";
 import TransactionsOverview from "@/components/TransactionsOverview";
+
 import React from "react";
 
 function OverviewPage() {

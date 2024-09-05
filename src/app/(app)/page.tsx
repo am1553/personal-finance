@@ -1,8 +1,7 @@
-"use client";
 import React from "react";
 
-function App() {
-  return <div>Invalid url</div>;
+function AppPage() {
+  return <div className="route-section">AppPage</div>;
 }
 
-export default App;
+export default AppPage;
