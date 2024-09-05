@@ -1,8 +1,7 @@
-import { redirect } from "next/navigation";
+"use client";
 import React from "react";
 
 function App() {
-  redirect("/overview");
   return <div>Invalid url</div>;
 }
 
