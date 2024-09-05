@@ -12,7 +12,7 @@ function BudgetsPage() {
   const { budgets } = data;
   return (
     <section className="route-section">
-      {/* <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between">
         <h1 className="my-4">Budgets</h1>
         <Link href={"budgets/add"}>
           <Button variant={"primary"} className="w-fit">
@@ -33,9 +33,9 @@ function BudgetsPage() {
             />
           ))}
         </div>
-      </div> */}
+      </div>
 
-      <AddBudgetForm />
+      {/* <AddBudgetForm /> */}
     </section>
   );
 }
